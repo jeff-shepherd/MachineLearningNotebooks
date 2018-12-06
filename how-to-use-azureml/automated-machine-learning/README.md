@@ -337,7 +337,7 @@ AutoML uses the SSH protocol to communicate with remote DSVMs.  This defaults to
 ## Remote run: setup iteration fails
 This is often an issue with the `get_data` method.
 1) Check that the `get_data` method is valid by running it locally.
-2) Make sure that `get_data` isn't referring to a local files.  `get_data` is executed on the remote DSVM.  So, it doesn't have direct access to local data files.  Instead you can store the data files with DataStore.  See [auto-ml-remote-execution-with-datastore.ipynb](remote-execution-with-datastore/auto-ml-remote-execution-with-datastore.ipynb)
+2) Make sure that `get_data` isn't referring to any local files.  `get_data` is executed on the remote DSVM.  So, it doesn't have direct access to local data files.  Instead you can store the data files with DataStore.  See [auto-ml-remote-execution-with-datastore.ipynb](remote-execution-with-datastore/auto-ml-remote-execution-with-datastore.ipynb)
 3) You can get to the error log for the setup iteration by clicking the `Click here to see the run in Azure portal` link, click `Back to Experiment`, click on the highest run number and then click on Logs.
 
 ## Remote run: disk full
